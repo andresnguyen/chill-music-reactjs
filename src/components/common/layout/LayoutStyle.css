@@ -1,0 +1,54 @@
+.sidenav {
+	height: 85%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	overflow-x: hidden;
+}
+.content {
+	margin-left: 200px;
+	height: 85%;
+	width: 100%;
+	position: fixed;
+	overflow-x: hidden;
+	background-color: #2a2a2a;
+}
+.content-main {
+	height: 75%;
+	padding-left: 20px;
+	position: fixed;
+	overflow-x: hidden;
+}
+.header-page {
+	top: 0;
+	height: 10%;
+	width: 86%;
+	padding: 10px;
+	background-color: #181818;
+}
+.footer-page {
+	height: 15%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: #181818;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+/* Side navigation links */
+.sidenav a {
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+	background-color: #ddd;
+	color: black;
+}
