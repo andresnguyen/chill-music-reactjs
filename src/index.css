@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #1db954;
+
+  --primary-bg: #121212; 
+
+  --black-color: #000;
+  --white-color: #fff;
+  --text-color: #b3b3b3;
+  
+  --footer-height: 90px;
+  --navbar-width: 234px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
