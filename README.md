@@ -1,5 +1,12 @@
 # Chill Music Reactjs
 
+# How to use this project
+1. Run cmd: git clone https://github.com/thuongnguyen-it78/chill-music-reactjs.git
+2. Get location project and run cmd
+    - yarn install
+    - yarn start 
+    - Chill it 
+
 ## Library
 - react-router-dom 
 - react-redux 
@@ -8,6 +15,8 @@
 - axios 
 - @reduxjs/toolkit
 - node-sass@4.14.1
+- antd
+- @ant-design/icons
 
 ## Routes
 
