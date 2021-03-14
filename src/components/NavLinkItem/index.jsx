@@ -10,7 +10,7 @@ NavLinkItem.propTypes = {
 
 function NavLinkItem({linkItem}) {
     return (
-           <NavLink to = {linkItem.path} activeClassName="navlink-sidebar--active" className = 'navlink-sidebar'>
+           <NavLink to = {linkItem.path} exact activeClassName="navlink-sidebar--active" className = 'navlink-sidebar'>
                {linkItem.icon}
                <span className = 'navlink-sidebar__text'>{linkItem.text}</span>
             </NavLink> 
