@@ -11,6 +11,7 @@ PlayMusic.propTypes = {
 };
 
 function PlayMusic(props) {
+    
     return (
         <footer className = 'footer'>
             <SongInfo />
