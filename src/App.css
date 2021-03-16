@@ -2,7 +2,8 @@
 .wrapper-main {
     display: flex;
     height: calc(100vh - var(--footer-height));
-
+    max-height: calc(100vh - var(--footer-height));
+    
 }
 
 .wrapper-sidebar {
@@ -12,4 +13,7 @@
 
 .wrapper-content {
     flex-grow: 1;
+    height: 1;
+    overflow-y: scroll;
+    height: 100%;
 }
