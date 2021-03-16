@@ -1,4 +1,15 @@
 .footer {
     height: var(--footer-height);
-    background-color: var(--primary-color)
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    overflow: hidden;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    justify-content: space-between;
+    min-width: 800px;
+
 }
+

@@ -1,0 +1,62 @@
+.util-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 30%;
+    min-width: 180px;
+
+    button {
+        height: 32px; 
+        width: 32px; 
+        display: flex; 
+        justify-content: center;  
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: transparent; 
+
+        svg {
+            color: var(--text-color);
+            fill: var(--text-color);
+        }
+    }
+
+    .volume-control {
+        display: flex;
+        width: 125px;
+        align-items: center;
+        button {
+            margin-right: 4px;
+        }
+
+        .ant-slider {
+            flex-grow: 1;
+            height: 4px;
+            margin: 0;
+            padding: 0;
+    
+            &:hover .ant-slider-track {
+                background-color: var(--primary-color);
+            }
+    
+            &:hover .ant-slider-rail {
+                background-color: #535353;
+            }
+    
+            
+        }
+    
+        .ant-slider-rail {
+            background-color: #535353;
+        }
+    
+        .ant-slider-track {
+            background-color: #b3b3b3;
+        }
+    
+        .ant-slider-handle {
+            border: none !important;
+        }
+    }
+}
