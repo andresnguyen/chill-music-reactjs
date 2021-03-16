@@ -32,7 +32,7 @@ const AlbumList = (props) => {
                 dataSource={value}
                 renderItem={item => (
                   <List.Item>
-                      <Album album = {{img: item.thumbnailM, title: item.name, desc: item.genre + " "+item.realeaseDate}} />
+                      <Album album = {{img: item.thumbnailM, title: item.name, desc: item.genre + " -- "+item.realeaseDate}} />
 
                   </List.Item>
                 )}

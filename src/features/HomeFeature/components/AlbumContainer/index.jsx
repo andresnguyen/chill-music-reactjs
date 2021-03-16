@@ -172,10 +172,10 @@ function AlbumContainer(props) {
             }]
     return (
         <div className="album-container">
-            <AlbumList listTitle="Đã phát gần đây" dataTest={dataTest}></AlbumList>
-            <AlbumList listTitle="Gợi ý cho bạn" dataTest={dataTest2}></AlbumList>
-            <AlbumList listTitle="Đã phát gần đây" dataTest={dataTest3}></AlbumList>
-            <AlbumList listTitle="Đã phát gần đây" dataTest={dataTest4}></AlbumList>
+            <AlbumList listTitle="Chào buổi sáng" dataTest={dataTest}></AlbumList>
+            <AlbumList listTitle="Đã phát gần đây" dataTest={dataTest2}></AlbumList>
+            <AlbumList listTitle="Ngày năng động" dataTest={dataTest3}></AlbumList>
+            <AlbumList listTitle="Lựa chọn của Chill Music" dataTest={dataTest4}></AlbumList>
         </div>
     );
 }
