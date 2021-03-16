@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     height: 100%;
-
     width: 30%;
 
     &__img {
@@ -29,14 +28,11 @@
             }
 
         }
-
        
     }
 
     .list-artist {
         margin-bottom: 0;
-        line-height: 17px;
-
         
         &__name {
 
@@ -44,6 +40,7 @@
 
             a {
                 color: var(--text-color);
+
                 font-size: 1.2rem;
                 font-weight: 400;
                 line-height: 16px;
@@ -90,6 +87,5 @@
             display: none
         }
     }
-
 
 }

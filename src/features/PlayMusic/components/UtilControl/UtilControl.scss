@@ -9,11 +9,13 @@
     button {
         height: 32px; 
         width: 32px; 
+
         display: flex; 
         justify-content: center;  
         align-items: center;
         border: none;
         outline: none;
+
         background-color: transparent; 
 
         svg {
@@ -26,12 +28,14 @@
         display: flex;
         width: 125px;
         align-items: center;
+
         button {
             margin-right: 4px;
         }
 
         .ant-slider {
             flex-grow: 1;
+            
             height: 4px;
             margin: 0;
             padding: 0;

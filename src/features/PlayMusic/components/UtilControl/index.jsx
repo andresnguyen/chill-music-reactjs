@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import './UtilControl.scss'
 import icon from '../../../../constants/footer-icon'
 import { Slider } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { changeVolume } from '../../PlayMusicSlice.js'
+
+
 
 
 UtilControl.propTypes = {
@@ -14,6 +19,14 @@ UtilControl.defaultProps = {
 }
 
 function UtilControl() {
+
+    const volume = useSelector(state => state.music.volume)
+
+    const dispatch = useDispatch()
+
+    const handleSliderChange = (value) => {
+        dispatch(changeVolume(value / 100))
+    }
     return (
         <div className = "util-control" >
 
@@ -29,7 +42,7 @@ function UtilControl() {
                 <button> 
                     {icon.volume}
                  </button>
-                <Slider />
+                <Slider disabled={false} tooltipVisible = {false} value={volume * 100} onChange={handleSliderChange}/>
             </div>
             
         </div>
