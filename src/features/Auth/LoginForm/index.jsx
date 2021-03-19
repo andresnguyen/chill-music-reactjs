@@ -1,84 +1,79 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Button, Checkbox, Form, Input } from 'antd'
+import React from 'react'
 import './LoginForm.scss'
 const layout = {
-  labelCol: {
-    span: 10,
-  },
-  wrapperCol: {
-    span: 4,
-  },
-};
+    labelCol: {
+        span: 10,
+    },
+    wrapperCol: {
+        span: 4,
+    },
+}
 const tailLayout = {
-  wrapperCol: {
-    offset: 10,
-    span: 10,
-  },
-};
+    wrapperCol: {
+        offset: 10,
+        span: 10,
+    },
+}
 
-LoginForm.propTypes = {
-    
-};
+LoginForm.propTypes = {}
 
-function LoginForm({onSubmit}) {
-
+function LoginForm({ onSubmit }) {
     const onFinish = (values) => {
         onSubmit(values)
-    };
-    
+    }
+
     const onFinishFailed = (errorInfo) => {
-        console.log('Failed:', errorInfo);
-    };
+        console.log('Failed:', errorInfo)
+    }
 
     return (
-
-        <Form 
-        {...layout}
-        name="basic"
-        initialValues={{
-        remember: true,
-        }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
+        <Form
+            {...layout}
+            name="basic"
+            initialValues={{
+                remember: true,
+            }}
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
         >
             <Form.Item
-            label="Email"
-            name="email"
-            rules={[
-                {
-                required: true,
-                message: 'Vui lòng nhập email!',
-                },
-            ]}
+                label="Email"
+                name="email"
+                rules={[
+                    {
+                        required: true,
+                        message: 'Vui lòng nhập email!',
+                    },
+                ]}
             >
-            <Input />
+                <Input />
             </Form.Item>
 
             <Form.Item
-            label="Password"
-            name="password"
-            rules={[
-                {
-                required: true,
-                message: 'Vui lòng nhập password!',
-                },
-            ]}
+                label="Password"
+                name="password"
+                rules={[
+                    {
+                        required: true,
+                        message: 'Vui lòng nhập password!',
+                    },
+                ]}
             >
-            <Input.Password />
+                <Input.Password />
             </Form.Item>
 
             <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-            <Checkbox>Remember me</Checkbox>
+                <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
             <Form.Item {...tailLayout}>
-        <Button type="primary" htmlType="submit">
-            Submit
-        </Button>
-        </Form.Item>
+                <Button type="primary" htmlType="submit">
+                    Submit
+                </Button>
+            </Form.Item>
         </Form>
-    );
+    )
 }
 
-export default LoginForm;
+export default LoginForm

@@ -1,46 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './SongInfo.scss'
-import {Link} from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import SonTung from '../../../../assets/artists/son-tung.jpg'
 import icon from '../../../../constants/footer-icon'
+import './SongInfo.scss'
 
+SongInfo.propTypes = {}
 
-SongInfo.propTypes = {
-};
-
-SongInfo.defaultProps = {
-}
+SongInfo.defaultProps = {}
 
 function SongInfo() {
     return (
-       <div className="footer-info">
-           <img src = {SonTung} alt="" className="footer-info__img"/>
-           <div className="song-info">
-                <Link to = "#" className="song-info__name">Nơi Này Có Anh</Link>
+        <div className="footer-info">
+            <img src={SonTung} alt="" className="footer-info__img" />
+            <div className="song-info">
+                <Link to="#" className="song-info__name">
+                    Nơi Này Có Anh
+                </Link>
 
                 <div className="list-artist">
                     <div className="list-artist__name">
-                        <Link to = "#">
-                            Sơn Tùng, 
-                        </Link>
+                        <Link to="#">Sơn Tùng,</Link>
                     </div>
                     <div className="list-artist__name">
-                        <Link to = "#">
-                            Đen
-                        </Link>
+                        <Link to="#">Đen</Link>
                     </div>
                 </div>
-           </div>
+            </div>
 
-           <button className="footer-info__icon">
-               {icon.heart}
-               {icon.heartFill}
-           </button>
-
-       </div>
-        
-    );
+            <button className="footer-info__icon">
+                {icon.heart}
+                {icon.heartFill}
+            </button>
+        </div>
+    )
 }
 
-export default SongInfo;
+export default SongInfo

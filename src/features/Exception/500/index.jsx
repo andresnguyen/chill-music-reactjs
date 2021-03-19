@@ -1,16 +1,16 @@
-import React from 'react';
-import { Result, Button } from 'antd';
+import React from 'react'
+import { Result, Button } from 'antd'
 function ServerError() {
-	return (
-		<div className="500-container">
+    return (
+        <div className="500-container">
             <Result
                 status="500"
                 title="500"
                 subTitle="SXin lỗi, có lỗi xảy ra."
                 extra={<Button type="primary">Quay lại</Button>}
             />
-		</div>
-	);
+        </div>
+    )
 }
 
-export default ServerError;
+export default ServerError

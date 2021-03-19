@@ -1,13 +1,13 @@
 // import counterReducer from '../features/Counter/counterSlice';
-import musicReducer from '../features/PlayMusic/PlayMusicSlice';
-const { configureStore } = require('@reduxjs/toolkit');
+import musicReducer from '../features/PlayMusic/PlayMusicSlice'
+const { configureStore } = require('@reduxjs/toolkit')
 
 const rootReducer = {
-  music: musicReducer,
-};
+    music: musicReducer,
+}
 
 const store = configureStore({
-  reducer: rootReducer,
-});
+    reducer: rootReducer,
+})
 
-export default store;
+export default store
