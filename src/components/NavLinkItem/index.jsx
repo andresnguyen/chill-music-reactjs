@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './NavLinkItem.scss'
 import { NavLink } from 'react-router-dom';
-import SearchOutlined from '@ant-design/icons'
 
 NavLinkItem.propTypes = {
     linkItem: PropTypes.object.isRequired,

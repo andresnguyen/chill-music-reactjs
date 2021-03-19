@@ -4,9 +4,12 @@ import './SecurityLayout.scss'
 import Header from '../components/Header'
 import PlayMusic from '../features/PlayMusic'
 import Sidebar from '../components/Sidebar'
+import { Helmet } from 'react-helmet'
 
-function SecurityLayout({ children }) {
+
+function SecurityLayout({ children, title }) {
 	return (
+
 		<div className="security-layout">
             	<div className="wrapper-main">
 				<div className="wrapper-sidebar">
@@ -19,7 +22,9 @@ function SecurityLayout({ children }) {
 				>
 					<Header/>
 
-					
+					<Helmet>
+						<title>{title}</title>
+					</Helmet>
                     { children }
 				</div>
 			</div>

@@ -42,7 +42,6 @@ function PlayControl() {
     useEffect(() => {
         songApi.getAll()
         .then(data => {
-            console.log(data.data)
             setSongs(data.data)
         })
 
@@ -94,8 +93,6 @@ function PlayControl() {
     const handleRandomClick = () => {
         setIsRamdom(!isRandom);
 
-        console.log(isRandom)
-
         if(!isRandom) {
             prevSongsRef.current = songs 
             
@@ -120,7 +117,6 @@ function PlayControl() {
     const handleTimeUpdate = (e) => {
         setCurrentTime(e.target.currentTime)
         e.target.volume = volume
-        console.log(changingSliderRef)
         if(!changingSliderRef.current) {
             setValueSlider(e.target.currentTime / endTime * 100)
         }

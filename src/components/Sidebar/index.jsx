@@ -1,19 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './Sidebar.scss'
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.svg';
 import NavLinkList from '../NavLinkList';
-import logo from '../../assets/images/logo.svg'
+import './Sidebar.scss';
 
 Sidebar.propTypes = {
-    linkItem: PropTypes.object.isRequired,
+
 };
 
-function Sidebar({linkItem}) {
+function Sidebar() {
     return (
-           <div class = 'sidebar'>
+           <div className = 'sidebar'>
 
-                <Link className="sidebar__logo">
+                <Link className="sidebar__logo" to = '/'>
                     <img src= {logo} alt=""/>
                 </Link>
                 <div className="sidebar__link">

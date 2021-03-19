@@ -1,20 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './NavLinkList.scss'
-import { NavLink } from 'react-router-dom';
-import link from '../../constants/navlink-sidebar'
+import link from '../../constants/navlink-sidebar';
 import NavLinkItem from '../NavLinkItem';
+import './NavLinkList.scss';
 
-NavLinkList.propTypes = {
-    linkItem: PropTypes.object.isRequired,
-};
 
-function NavLinkList({linkItem}) {
+function NavLinkList() {
     return (
            <nav>
                {
-                   link.map(linkItem => (
-                       <NavLinkItem linkItem = {linkItem} />
+                   link.map((linkItem, index) => (
+                       <NavLinkItem key = {index} linkItem = {linkItem} />
                    ))
                }
             </nav> 
