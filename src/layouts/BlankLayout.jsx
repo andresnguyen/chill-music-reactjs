@@ -1,12 +1,12 @@
-import React from 'react';
-import {Helmet} from 'react-helmet'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
-
-const BlankLayout = ({ children, title }) => 
+const BlankLayout = ({ children, title }) => (
     <div className="blank-layout">
-        	<Helmet>
-                <title>{title}</title>
-            </Helmet>
+        <Helmet>
+            <title>{title}</title>
+        </Helmet>
         {children}
-    </div>;
-export default BlankLayout;
+    </div>
+)
+export default BlankLayout

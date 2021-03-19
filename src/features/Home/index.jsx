@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import AlbumContainer from './components/AlbumContainer'
 function HomePage() {
-	return (
-		<div className="homepage">
-            <AlbumContainer/>
-		</div>
-	);
+    return (
+        <div className="homepage">
+            <AlbumContainer />
+        </div>
+    )
 }
 
-export default HomePage;
+export default HomePage

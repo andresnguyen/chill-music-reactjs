@@ -18,7 +18,6 @@ function App() {
         let isLogin = true
 
         if (routes.length > 0) {
-            
             result = routes.map((route, index) => {
                 const layout = route.layout
                 if (route.auth && !isLogin) {
@@ -38,7 +37,7 @@ function App() {
                             exact={route.exact}
                             component={WaitingComponent(route.main)}
                             layout={layout}
-                            title = {route.title}
+                            title={route.title}
                         />
                     )
                 }
@@ -58,7 +57,7 @@ function RouteWrapper({ component: Component, layout: Layout, title, ...rest }) 
         <Route
             {...rest}
             render={(props) => (
-                <Layout {...props} title = {title}>
+                <Layout {...props} title={title}>
                     <Component {...props} />
                 </Layout>
             )}

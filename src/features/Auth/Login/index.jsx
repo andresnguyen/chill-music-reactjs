@@ -1,26 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import LoginForm from '../LoginForm'
 import './Login.scss'
-import LoginForm from '../LoginForm';
-import {Helmet} from "react-helmet";
 
-
-Login.propTypes = {
-    
-};
+Login.propTypes = {}
 
 function Login() {
-
     const handleSubmit = async (values) => {
         console.log(values)
-    }       
+    }
 
     return (
-        <div>   
-
+        <div>
             <LoginForm onSubmit={handleSubmit} />
         </div>
-    );
+    )
 }
 
-export default Login;
+export default Login
