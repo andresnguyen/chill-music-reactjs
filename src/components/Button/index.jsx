@@ -14,7 +14,7 @@ Button.defaultProps = {
 function Button({className, text}) {
     return (
         <button className = {classnames('btn', className)} >
-            { text ? text : 'Sign Up'}
+            { text ? text : 'Đăng Ký'}
             
         </button>
         

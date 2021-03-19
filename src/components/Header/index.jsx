@@ -12,7 +12,7 @@ function Header(props) {
         <div className = 'header'>
             <div className="header__auth">
                 <Button />
-                <Button className = 'btn--bg' text = 'LOG IN'/>
+                <Button className = 'btn--bg' text = 'ĐĂNG NHẬP'/>
             </div>
         </div>
     );
