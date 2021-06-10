@@ -6,25 +6,41 @@ const HomePage = lazy(() => import('./features/Home'))
 const SigninPage = lazy(() => import('./features/Auth/Login'))
 const Error404 = lazy(() => import('./features/Exception/404'))
 
-const route = [
+const routes = [
     {
         path: '/',
         exact: true,
         auth: false,
         layout: SecurityLayout,
-        title: 'Trang Chủ',
+        title: 'Home',
         main: (props) => <HomePage router={props} />,
     },
     {
-        path: '/auth/login',
+        path: '/search',
+        exact: true,
+        auth: false,
+        layout: SecurityLayout,
+        title: 'Search',
+        main: (props) => <HomePage router={props} />,
+    },
+    {
+        path: '/collection/playlists',
+        exact: true,
+        auth: false,
+        layout: SecurityLayout,
+        title: 'Library',
+        main: (props) => <HomePage router={props} />,
+    },
+    {
+        path: '/auth/signin',
         exact: true,
         auth: false,
         layout: BlankLayout,
-        title: 'Đăng Nhập',
+        title: 'Sign In',
         main: (props) => <SigninPage router={props} />,
     },
     {
-        path: '/filenotfoud',
+        path: '/not-found',
         exact: true,
         auth: false,
         layout: BlankLayout,
@@ -36,4 +52,4 @@ const route = [
     },
 ]
 
-export default route
+export default routes
