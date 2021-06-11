@@ -1,0 +1,22 @@
+.sidebar {
+    width: var(--navbar-width);
+
+    &__logo {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 0 24px;
+
+
+    }
+
+    &__logo img {
+        width: 17rem;
+
+    }
+
+    &__link {
+        padding: 0 8px;
+    }
+
+}

@@ -1,18 +1,12 @@
 import React from 'react'
-import './Header.scss'
+import './Search.scss'
 
-Header.propTypes = {}
+Search.propTypes = {}
 
-function Header() {
+function Search() {
     return (
-        <header className="header">
-            <div className="header__authencation"></div>
-
-            <div className="header__profile"></div>
-
-            <div className="search-wrapper"></div>
-        </header>
+      
     )
 }
 
-export default Header
+export default Search

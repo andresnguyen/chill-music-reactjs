@@ -4,6 +4,7 @@ import React from 'react'
 import Header from './components/Header'
 import MusicPlayer from './components/MusicPlayer'
 import Sidebar from './components/Sidebar'
+import PlaylistItem from './components/PlaylistItem'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <div className="container-main">
                 <div className="sidebar-wrapper">
                     <Sidebar />
+                    <PlaylistItem />
                 </div>
 
                 <div className="header-wrapper">

@@ -1,6 +1,10 @@
 import React from 'react'
-function HomePage() {
-    return <div className="homepage"></div>
+import PropTypes from 'prop-types'
+
+Home.propTypes = {}
+
+function Home(props) {
+    return <div>Home page</div>
 }
 
-export default HomePage
+export default Home

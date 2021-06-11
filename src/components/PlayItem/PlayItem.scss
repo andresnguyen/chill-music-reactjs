@@ -1,0 +1,12 @@
+.header {
+    height: var(--header-height);
+    background-color: var(--black-color);
+
+    &__auth {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 32px;
+    }
+}

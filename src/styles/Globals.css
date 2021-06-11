@@ -1,22 +1,22 @@
 :root {
-    --primary-color: #1db954;
+    --color-1: #1db954;
 
-    --black-color: #000000;
     --white-color: #fff;
     --text-color: #b3b3b3;
 
-    --footer-height: 90px;
-    --sidebar-width: 234px;
-    --header-height: 60px;
+    --black-1: #000000;
+    --black-2: #121212;
+    --black-3: #181818;
+    --black-4: #282828;
+    --black-5: #333;
 
     --grey-1: #32353a;
     --grey-2: #454f59;
     --grey-3: #2a2b2f;
 
-    --album-hover: #282828;
-    --album: #181818;
-    --bg-color: #121212;
-    --text-sidebar: #b3b3b3;
+    --footer-height: 90px;
+    --sidebar-width: 234px;
+    --header-height: 60px;
 }
 
 * {
